@@ -5,16 +5,20 @@ uses
   CustomerForm in 'CustomerForm.pas' {frmCustomer},
   MainMenu in 'MainMenu.pas' {Form1},
   DataModule in 'DataModule.pas' {DM: TDataModule},
-  CustomerCUForm in 'CustomerCUForm.pas' {frmCustomerCU};
+  CustomerCUForm in 'CustomerCUForm.pas' {frmCustomerCU},
+  OrderForm in 'OrderForm.pas' {frmOrder},
+  OrderCUForm in 'OrderCUForm.pas' {frmOrderCU};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TfrmCustomer, frmCustomer);
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmCustomer, frmCustomer);
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TfrmCustomerCU, frmCustomerCU);
+  Application.CreateForm(TfrmOrder, frmOrder);
+  Application.CreateForm(TfrmOrderCU, frmOrderCU);
   Application.Run;
 end.

@@ -18,7 +18,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure btnCreateClick(Sender: TObject);
     procedure btnUpdateClick(Sender: TObject);
-    procedure btnDeleteClick(Sender: TObject);  // Add the delete handler
+    procedure btnDeleteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,6 +49,7 @@ begin
   frmCustomerCU.showmodal;
   RefreshGrid;
 end;
+
 
 procedure TfrmCustomer.btnDeleteClick(Sender: TObject);
 var

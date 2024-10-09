@@ -19,8 +19,6 @@ object frmCustomerCU: TfrmCustomerCU
     Height = 441
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 620
-    ExplicitHeight = 428
     object Label1: TLabel
       Left = 61
       Top = 122
@@ -122,7 +120,8 @@ object frmCustomerCU: TfrmCustomerCU
       Top = 384
       Width = 129
       Height = 33
-      Caption = 'Cancel'
+      Caption = '&Close'
+      ModalResult = 8
       TabOrder = 5
     end
     object edtCustomerUID: TEdit
