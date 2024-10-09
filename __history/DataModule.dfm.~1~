@@ -1,0 +1,5 @@
+object DM: TDM
+  Height = 935
+  Width = 1246
+  PixelsPerInch = 134
+end

@@ -1,0 +1,20 @@
+# Delphi build output files
+*.dcu
+*.exe
+*.dll
+*.dcp
+*.bpl
+
+# Project backup and temporary files
+*.~*
+*.bak
+*.map
+*.identcache
+*.local
+*.obj
+__history/
+
+# IDE config files
+*.dsk
+*.stat
+*.identcache

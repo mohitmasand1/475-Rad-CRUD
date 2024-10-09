@@ -1,0 +1,45 @@
+unit CustomerForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls;
+
+type
+  TfrmCustomer = class(TForm)
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    btnCreate: TButton;
+    btnUpdate: TButton;
+    btnDelete: TButton;
+    DataSource1: TDataSource;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCustomer: TfrmCustomer;
+
+implementation
+
+{$R *.dfm}
+
+uses DataModule;
+
+procedure TfrmCustomer.FormShow(Sender: TObject);
+begin
+  with DM.QrySELECT do
+    begin
+        active := false;
+        sql.Clear;
+        sql.Text := 'SELECT * FROM customers';  // sql.add('')
+        active := true;
+    end;
+end;
+
+end.

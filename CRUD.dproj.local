@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.034,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.412,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerForm.dfm=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.055,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.024,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.701,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\DataModule.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.337,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CRUD.dproj=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.701,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\DataModule.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.291,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerCUForm.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.044,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\MainMenu.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.291,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerCUForm.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.153,=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.412,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerForm.pas=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.044,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\MainMenu.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.314,=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

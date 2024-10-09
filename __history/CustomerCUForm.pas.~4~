@@ -1,0 +1,71 @@
+unit CustomerCUForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmCustomerCU = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtCustomerID: TEdit;
+    edtFirstname: TEdit;
+    edtSurname: TEdit;
+    chkActive: TCheckBox;
+    btnCreate: TButton;
+    Button1: TButton;
+    edtCustomerUID: TEdit;
+    Label4: TLabel;
+    procedure FormShow(Sender: TObject);
+    procedure btnCreateClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCustomerCU: TfrmCustomerCU;
+
+implementation
+
+uses DataModule;
+
+{$R *.dfm}
+
+procedure TfrmCustomerCU.btnCreateClick(Sender: TObject);
+begin
+  if (self.Caption = 'Create Customer') then
+  begin
+    with DM.QryINSERT do
+    begin
+      sql.Clear;
+      sql.Text := 'INSERT INTO customers (customer_uid, customer_id, first_name, surname, active_flg) ' +
+                    ' VALUES (' + quotedstr(edtCustomerUID.Text) + ', ' +
+                                  quotedstr(edtCustomerID.Text) + ', ' +
+                                  quotedstr(edtFirstname.Text) + ', ' +
+                                  quotedstr(edtSurname.Text) + ', ' +
+                                  IntToStr(Integer(chkActive.Checked)) + ')';
+      Showmessage(sql.Text);
+      ExecSQL;
+    end;
+      Close;
+  end;
+end;
+
+procedure TfrmCustomerCU.FormShow(Sender: TObject);
+begin
+  if (self.Caption = 'Create Customer') then
+    begin
+      edtCustomerID.Clear;
+      edtFirstname.Clear;
+      edtSurname.Clear;
+      chkActive.Checked := false;
+    end;
+end;
+
+end.
