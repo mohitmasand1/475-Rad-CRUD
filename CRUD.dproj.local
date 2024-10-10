@@ -1,42 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.337,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CRUD.dproj=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.701,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\DataModule.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.412,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerForm.dfm=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.055,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.668,C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.pas=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\OrderCUForm.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.034,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.668,C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.dfm=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\OrderCUForm.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.842,C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.dfm=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\OrderForm.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.146,C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.dfm=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\OrdersForm.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.701,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\DataModule.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.337,C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CRUD.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.701,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\DataModule.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.291,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerCUForm.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.291,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerCUForm.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.024,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.820,=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.034,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.044,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\MainMenu.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.701,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\DataModule.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.314,=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.412,C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerForm.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.412,C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerForm.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.153,=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.291,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerCUForm.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.044,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\MainMenu.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.291,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerCUForm.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit2.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.044,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\MainMenu.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.842,C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.pas=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\OrderForm.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.211,=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.146,C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.pas=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\OrdersForm.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.067,=C:\Users\nima_\Documents\CompSci\CMPT475\475-Rad-CRUD\Unit2.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.412,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\CustomerForm.pas=C:\Users\mohit\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.044,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\Unit1.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\a2\rad-studio\MainMenu.pas</Transaction>
+    <Transaction>2024-10-09 17:00:07.200,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.pas</Transaction>
+    <Transaction>2024-10-09 17:18:58.743,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\ProductCUForm.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.dfm</Transaction>
+    <Transaction>2024-10-09 17:18:58.743,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\ProductCUForm.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.pas</Transaction>
+    <Transaction>2024-10-09 21:52:43.358,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.pas</Transaction>
+    <Transaction>2024-10-09 22:03:01.594,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\OrderUForm.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.pas</Transaction>
+    <Transaction>2024-10-09 22:03:01.594,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\OrderUForm.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.dfm</Transaction>
+    <Transaction>2024-10-09 22:15:46.209,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\OrderUForm.pas=</Transaction>
+    <Transaction>2024-10-09 22:24:12.787,=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.pas</Transaction>
+    <Transaction>2024-10-09 22:33:02.501,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\OrderDetailReport.pas=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.pas</Transaction>
+    <Transaction>2024-10-09 22:33:02.501,C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\OrderDetailReport.dfm=C:\Users\mohit\OneDrive\Desktop\courses\Cmpt 475\backup\rad-studio\Unit2.dfm</Transaction>
   </Transactions>
-	<ProjectSortOrder AutoSort="0" SortType="0">
-    <File Path="CustomerCUForm.pas"/>
-    <File Path="CustomerCUForm.dfm"/>
-    <File Path="CustomerForm.pas"/>
-    <File Path="CustomerForm.dfm"/>
-    <File Path="DataModule.pas"/>
-    <File Path="DataModule.dfm"/>
-    <File Path="MainMenu.pas"/>
-    <File Path="MainMenu.dfm"/>
-    <File Path="OrderForm.pas"/>
-    <File Path="OrderForm.dfm"/>
-    <File Path="OrderCUForm.pas"/>
-    <File Path="OrderCUForm.dfm"/>
-  </ProjectSortOrder>
 </BorlandProject>

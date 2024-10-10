@@ -1,7 +1,7 @@
 object frmOrderCU: TfrmOrderCU
   Left = 0
   Top = 0
-  Caption = 'frmOrderCU'
+  Caption = 'Order Create'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -10,6 +10,7 @@ object frmOrderCU: TfrmOrderCU
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnShow = FormShow
   TextHeight = 15
   object Panel1: TPanel
     Left = 0
@@ -18,6 +19,8 @@ object frmOrderCU: TfrmOrderCU
     Height = 441
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 620
+    ExplicitHeight = 428
     object LabelCustomerUid: TLabel
       Left = 61
       Top = 90
@@ -66,9 +69,9 @@ object frmOrderCU: TfrmOrderCU
       object LabelOrderDetailUid: TLabel
         Left = 46
         Top = 20
-        Width = 113
+        Width = 115
         Height = 21
-        Caption = 'Order Detail Uid'
+        Caption = 'Order Detail UID'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16

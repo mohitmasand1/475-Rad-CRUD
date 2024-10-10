@@ -18,6 +18,8 @@ object Form1: TForm1
     Height = 549
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 728
+    ExplicitHeight = 536
     object Label1: TLabel
       Left = 328
       Top = 80
@@ -57,6 +59,7 @@ object Form1: TForm1
       Height = 41
       Caption = 'Orders and Details Report'
       TabOrder = 2
+      OnClick = Button3Click
     end
   end
 end

@@ -15,6 +15,7 @@ type
     btnUpdate: TButton;
     btnDelete: TButton;
     DataSource1: TDataSource;
+    Label1: TLabel;
     procedure FormShow(Sender: TObject);
     procedure btnCreateClick(Sender: TObject);
     procedure btnUpdateClick(Sender: TObject);

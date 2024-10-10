@@ -19,6 +19,8 @@ object frmCustomerCU: TfrmCustomerCU
     Height = 441
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 620
+    ExplicitHeight = 428
     object Label1: TLabel
       Left = 61
       Top = 122

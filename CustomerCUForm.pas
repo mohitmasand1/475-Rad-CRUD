@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, DateUtils;
 
 type
   TfrmCustomerCU = class(TForm)
@@ -37,6 +37,13 @@ implementation
 uses DataModule, CustomerForm;
 
 {$R *.dfm}
+
+
+function GetTimeBasedID: Int64;
+begin
+  // Use Unix timestamp in milliseconds
+  Result := DateTimeToUnix(Now, False) * 1000 + MilliSecondOf(Now);
+end;
 
 procedure TfrmCustomerCU.FormShow(Sender: TObject);
 begin
@@ -90,8 +97,9 @@ begin
     with DM.QryINSERT do
     begin
       SQL.Clear;
-      SQL.Text := 'INSERT INTO customers (customer_id, first_name, surname, active_flg) ' +
-                  'VALUES (:customer_id, :first_name, :surname, :active_flg)';
+      SQL.Text := 'INSERT INTO customers (customer_uid, customer_id, first_name, surname, active_flg) ' +
+                  'VALUES (:customer_uid, :customer_id, :first_name, :surname, :active_flg)';
+      Params.ParamByName('customer_uid').AsLargeInt := GetTimeBasedID;
       Params.ParamByName('customer_id').AsString := edtCustomerID.Text;
       Params.ParamByName('first_name').AsString := edtFirstname.Text;
       Params.ParamByName('surname').AsString := edtSurname.Text;

@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ComCtrls,
-  DataModule, Data.DB, FireDAC.Comp.Client, FireDAC.Stan.Param;
+  DataModule, Data.DB, FireDAC.Comp.Client, FireDAC.Stan.Param, DateUtils;
 
 type
   TfrmOrderCU = class(TForm)
@@ -47,6 +47,12 @@ implementation
 
 uses OrderForm;
 
+function GetTimeBasedID: Int64;
+begin
+  // Use Unix timestamp in milliseconds
+  Result := DateTimeToUnix(Now, False) * 1000 + MilliSecondOf(Now);
+end;
+
 // Show form based on whether we are creating or updating
 procedure TfrmOrderCU.FormShow(Sender: TObject);
 begin
@@ -55,6 +61,7 @@ begin
     // Clear fields for new order creation
     edtCustomerID.Clear;
     edtOrderUid.Clear;
+    edtOrderDetailUid.Clear;
     edtLineNumber.Clear;
     edtProductNumber.Clear;
     edtQuantity.Clear;
@@ -118,7 +125,7 @@ end;
 // Handle both create and update operations
 procedure TfrmOrderCU.btnCreateClick(Sender: TObject);
 var
-  NewOrderUID: Integer;
+  NewOrderUID: int64;
 begin
   if self.Caption = 'Create Order' then
   begin
@@ -126,27 +133,23 @@ begin
     with DM.QryINSERT do
     begin
       SQL.Clear;
-      SQL.Text := 'INSERT INTO orders (customer_uid, order_dt) ' +
-                  'VALUES (:customer_uid, :order_dt)';
+      SQL.Text := 'INSERT INTO orders (order_uid, customer_uid, order_dt) ' +
+                  'VALUES (:order_uid, :customer_uid, :order_dt)';
+      NewOrderUID := GetTimeBasedID;
+      Params.ParamByName('order_uid').AsLargeInt := NewOrderUID;
       Params.ParamByName('customer_uid').AsString := edtCustomerID.Text;
       Params.ParamByName('order_dt').AsDateTime := OrderDatePicker.Date;
       ExecSQL;
-
-      // Retrieve the last inserted OrderUID
-      SQL.Clear;
-      SQL.Text := 'SELECT last_insert_rowid() AS NewOrderUID';
-      Open;
-      NewOrderUID := FieldByName('NewOrderUID').AsInteger;
-      Close;
     end;
 
     // Insert order details
     with DM.QryINSERT do
     begin
       SQL.Clear;
-      SQL.Text := 'INSERT INTO order_details (order_uid, line_no, product_no, quantity, price_amt) ' +
-                  'VALUES (:order_uid, :line_no, :product_no, :quantity, :price_amt)';
-      Params.ParamByName('order_uid').AsInteger := NewOrderUID;
+      SQL.Text := 'INSERT INTO order_details (order_detail_uid, order_uid, line_no, product_no, quantity, price_amt) ' +
+                  'VALUES (:order_detail_uid, :order_uid, :line_no, :product_no, :quantity, :price_amt)';
+      Params.ParamByName('order_detail_uid').AsLargeInt := GetTimeBasedID;
+      Params.ParamByName('order_uid').AsLargeInt := NewOrderUID;
       Params.ParamByName('line_no').AsInteger := StrToInt(edtLineNumber.Text);
       Params.ParamByName('product_no').AsString := edtProductNumber.Text;
       Params.ParamByName('quantity').AsInteger := StrToInt(edtQuantity.Text);

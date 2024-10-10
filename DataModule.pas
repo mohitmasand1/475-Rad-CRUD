@@ -18,6 +18,15 @@ type
     QryINSERT: TFDQuery;
     QryUPDATE: TFDQuery;
     QryDELETE: TFDQuery;
+    OrdrQrySELECT: TFDQuery;
+    OrdrQryINSERT: TFDQuery;
+    OrdrQryUPDATE: TFDQuery;
+    OrdrQryDELETE: TFDQuery;
+    OrdrDtlQryINSERT: TFDQuery;
+    OrdrDtlQrySELECT: TFDQuery;
+    OrdrDtlQryUPDATE: TFDQuery;
+    OrdrDtlQryDELETE: TFDQuery;
+    OrdrDtlRprtQrySELECT: TFDQuery;
   private
     { Private declarations }
   public
