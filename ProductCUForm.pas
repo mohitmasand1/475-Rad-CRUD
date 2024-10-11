@@ -56,11 +56,15 @@ begin
     edtPriceAmnt.Clear;
     // Disable the customer UID field so users can't modify it
     edtOrderDetailUID.Enabled := False;
+    edtLineNumber.Enabled := False;
+    edtOrderDetailUID.Text := 'Auto-generated';
+    edtLineNumber.Text := 'Auto-generated';
   end
   else if (self.Caption = 'Update Product') then
   begin
     // Load the customer data for updating
     edtOrderDetailUID.Enabled := False; // Disable it for updates as well
+    edtLineNumber.Enabled := False;
     LoadOrderDetailData;
   end;
 end;
@@ -90,16 +94,29 @@ begin
 end;
 
 procedure TfrmProductCU.btnCreateClick(Sender: TObject);
+var
+  NewLineNo: Integer;
 begin
   if (self.Caption = 'Add Product') then
   begin
+    // Query the number of existing order details for the given order_uid
+    with DM.OrdrDtlQrySELECT do
+    begin
+      SQL.Clear;
+      SQL.Text := 'SELECT COUNT(*) AS DetailCount FROM order_details WHERE order_uid = :order_uid';
+      Params.ParamByName('order_uid').AsLargeInt := StrToInt64(frmProductCU.Hint);
+      Open;
+      NewLineNo := FieldByName('DetailCount').AsInteger + 1; // New line_no is count + 1
+      Close;
+    end;
+
     with DM.OrdrDtlQryINSERT do
     begin
       SQL.Clear;
       SQL.Text := 'INSERT INTO order_details (order_detail_uid, line_no, product_no, quantity, price_amt, order_uid) ' +
                   'VALUES (:order_detail_uid, :line_no, :product_no, :quantity, :price_amt, :order_uid)';
       Params.ParamByName('order_detail_uid').AsLargeInt := GetTimeBasedID; // Generate new UID
-      Params.ParamByName('line_no').AsInteger := StrToInt(edtLineNumber.Text);
+      Params.ParamByName('line_no').AsInteger := NewLineNo;
       Params.ParamByName('product_no').AsString := edtProductNumber.Text;
       Params.ParamByName('quantity').AsInteger := StrToInt(edtQuantity.Text);
       Params.ParamByName('price_amt').AsFloat := StrToFloat(edtPriceAmnt.Text);

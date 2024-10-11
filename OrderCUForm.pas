@@ -69,6 +69,10 @@ begin
     // Disable OrderUID and OrderDetailUID fields during creation
     edtOrderUid.Enabled := False;
     edtOrderDetailUid.Enabled := False;
+    edtLineNumber.Enabled := False;
+    edtOrderUid.Text := 'Auto-generated';
+    edtOrderDetailUid.Text := 'Auto-generated';
+    edtLineNumber.Text := 'Auto-generated';
   end
   else if self.Caption = 'Update Order' then
   begin
@@ -78,6 +82,7 @@ begin
     // Disable OrderUID and OrderDetailUID fields during update
     edtOrderUid.Enabled := False;
     edtOrderDetailUid.Enabled := False;
+    edtLineNumber.Enabled := False;
   end;
 end;
 
@@ -150,7 +155,7 @@ begin
                   'VALUES (:order_detail_uid, :order_uid, :line_no, :product_no, :quantity, :price_amt)';
       Params.ParamByName('order_detail_uid').AsLargeInt := GetTimeBasedID;
       Params.ParamByName('order_uid').AsLargeInt := NewOrderUID;
-      Params.ParamByName('line_no').AsInteger := StrToInt(edtLineNumber.Text);
+      Params.ParamByName('line_no').AsInteger := 1;
       Params.ParamByName('product_no').AsString := edtProductNumber.Text;
       Params.ParamByName('quantity').AsInteger := StrToInt(edtQuantity.Text);
       Params.ParamByName('price_amt').AsFloat := StrToFloat(edtPriceAmount.Text);

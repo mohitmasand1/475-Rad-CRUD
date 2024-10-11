@@ -111,8 +111,7 @@ object frmOrder: TfrmOrder
     Height = 41
     Align = alTop
     TabOrder = 2
-    ExplicitTop = 8
-    ExplicitWidth = 185
+    ExplicitWidth = 620
     object Label1: TLabel
       Left = 8
       Top = 13

@@ -176,7 +176,8 @@ begin
       Params.ParamByName('order_detail_uid').AsLargeInt := OrderDetailUID;
       ExecSQL;
     end;
-    RefreshOrderDetails(DBGrid.Fields[0].AsLargeInt);
+    // After deletion, refresh the order details and fix the line numbers
+    RefreshOrderDetails(DBGrid.Fields[0].AsLargeInt);  // Refresh the grid to show updated line numbers
   end;
 end;
 

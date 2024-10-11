@@ -19,8 +19,8 @@ object frmProductCU: TfrmProductCU
     Height = 441
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 22
-    ExplicitTop = 112
+    ExplicitWidth = 620
+    ExplicitHeight = 428
     object Label1: TLabel
       Left = 64
       Top = 80
@@ -90,35 +90,35 @@ object frmProductCU: TfrmProductCU
       Left = 208
       Top = 82
       Width = 313
-      Height = 33
+      Height = 23
       TabOrder = 0
     end
     object edtLineNumber: TEdit
       Left = 208
       Top = 138
       Width = 313
-      Height = 33
+      Height = 23
       TabOrder = 1
     end
     object edtProductNumber: TEdit
       Left = 208
       Top = 194
       Width = 313
-      Height = 33
+      Height = 23
       TabOrder = 2
     end
     object edtQuantity: TEdit
       Left = 208
       Top = 250
       Width = 313
-      Height = 33
+      Height = 23
       TabOrder = 3
     end
     object edtPriceAmnt: TEdit
       Left = 208
       Top = 306
       Width = 313
-      Height = 33
+      Height = 23
       TabOrder = 4
     end
     object btnCreate: TButton
@@ -135,7 +135,8 @@ object frmProductCU: TfrmProductCU
       Top = 384
       Width = 129
       Height = 33
-      Caption = 'Cancel'
+      Caption = '&Close'
+      ModalResult = 8
       TabOrder = 6
     end
   end
